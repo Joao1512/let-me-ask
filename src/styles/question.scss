@@ -1,0 +1,24 @@
+.userName {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #737380;
+}
+
+.like-button {
+    display: flex;
+    align-items: flex-end;
+    color: #737380;
+    gap: 8px;
+
+    &:hover {
+        filter: brightness(0.7);
+    }
+
+    &.liked {
+        color: #835afd;
+        svg path {
+            stroke: #835afd;
+        }
+    }
+}

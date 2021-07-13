@@ -1,0 +1,26 @@
+.button {
+    cursor: pointer;
+    border-radius: 8px;
+    border-style: none;
+    padding: 13px 46px;
+    background-color: #835AFD;
+    color: #FEFEFE;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+
+    &:not(disabled):hover {
+        filter: brightness(0.9)
+    }
+    transition: filter 0.2s;
+
+    &:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
+}
+
+.outlined {
+    background: transparent;
+    border: 1px solid #835AFD;
+    color: #835AFD;
+}
